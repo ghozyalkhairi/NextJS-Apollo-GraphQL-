@@ -6,13 +6,7 @@ import Link from "next/link"
 const PostDetail = ({ post }) => {
   const { post: postData } = post
   return (
-    <VStack
-      h="100vh"
-      maxW="100vw"
-      bgColor="#151515"
-      justifyContent="center"
-      p={4}
-    >
+    <VStack h="100vh" maxW="100vw" bgColor="#151515" p={4}>
       <Link style={{ width: "100%" }} href="/posts">
         <Button w="100%" colorScheme="orange">
           Back
