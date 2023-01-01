@@ -6,7 +6,7 @@ import client from "../../apolloClient"
 const Users = ({ users }) => {
   const { users: allUsers } = users
   return (
-    <VStack maxW="100vw" bgColor="#151515" p={4}>
+    <VStack h="100vh" maxW="100vw" bgColor="#151515" p={4}>
       <Text fontSize="2xl" fontWeight="bold" color="#FFF">
         All Users
       </Text>

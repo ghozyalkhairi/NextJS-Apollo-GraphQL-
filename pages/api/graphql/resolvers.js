@@ -8,6 +8,8 @@ const resolvers = {
   Post: {
     user: ({ userId }, _, { dataSources }) =>
       dataSources.postAPI.getUserById(userId),
+    comments: ({ id }, _, { dataSources }) =>
+      dataSources.postAPI.getCommentsByPostID(id),
   },
   User: {
     posts: ({ id }, _, { dataSources }) => {

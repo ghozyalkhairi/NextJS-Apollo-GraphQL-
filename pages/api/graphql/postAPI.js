@@ -21,6 +21,10 @@ class PostAPI extends RESTDataSource {
   async getUserById(id) {
     return this.get(`users/${id}`)
   }
+
+  async getCommentsByPostID(id) {
+    return this.get(`posts/${id}/comments`)
+  }
 }
 
 export default PostAPI

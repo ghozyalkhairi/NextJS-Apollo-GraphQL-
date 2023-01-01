@@ -13,6 +13,7 @@ const typeDefs = `#graphql
     title: String!
     body: String!
     user: User!
+    comments: [Comment!]!
   }
 
 # User type
@@ -34,6 +35,15 @@ const typeDefs = `#graphql
 # User's company type
   type Company {
     name: String!
+  }
+
+# Comment type
+  type Comment {
+    id: ID!
+    postId: Int!
+    name: String!
+    email: String!
+    body: String!
   }
 `
 
